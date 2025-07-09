@@ -1,0 +1,27 @@
+PHP adalah server script language sehingga butuh server untuk meng-compile script PHP.
+Di Ubuntu, untuk membangun server dapat menggunakan package apache2 (sudah terinstall).
+Agar server dapat membaca file PHP maka dibutuhkan module PHP (sudah terinstall).
+
+Secara default, lokasi penyimpanan untuk file apache2 adalah di /var/www/html.
+Jadi, ketika kita membuka url localhost maka yang dibaca adalah index.html di lokasi tersebut.
+
+Sekarang, coba modify tampilan default apache2.
+Caranya adalah dengan mengedit index.html.
+Namun aksesnya perlu diubah agar user biasa (non - root) dapat menyimpan perubahan file tersebut.
+Cara mengubah aksesnya adalah dengan menggunakan perintah chmod 777 index.html.
+
+Tugasnya:
+1. Buat 1 file html, misal namanya home.html
+2. File home.html di simpan di /var/www/html
+3. Untuk melakukan pengujian dapat diakses dengan cara localhost/home.html
+
+Apache2 dapat dikonfigurasi sesuai dengan kebutuhan.
+Misal, kita akan mengubah lokasi default dengan cara:
+edit file /etc/apache2/apache2.conf di bagian:
+<Directory /var/www/>
+
+Jika service belum berjalan dapat dilihat melalui WSL nya dengan menggunakan perintah:
+sudo systemctl status apache2
+
+Jika web servernya belum running dapat menggunakan perintah:
+sudo systemctl start apache2

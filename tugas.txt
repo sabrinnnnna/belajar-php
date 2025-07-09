@@ -1,0 +1,5 @@
+Silakan pelajari dulu secara mandiri, bab:
+PHP Echo / Print sampai PHP Arrays
+Dibuktikan dengan cara menjalankan tiap file yang ada di tutorial tersebut.
+
+Jadi buat file di folder belajar ya, sesuai dengan arahan tutorialnya.
