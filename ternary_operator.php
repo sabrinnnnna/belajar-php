@@ -1,23 +1,9 @@
 <?php
-$a = 13;
-
-// ternary operator
-$b = $a < 10 ? "Hello" : "Good Bye";
-
-// if else statement
-if ($a < 10) {
-    $b = "Hello";
-} else {
-    $b = "Good Bye";
-}
-
-echo $b;
-
-// soal
 $score = 85;
 $attendance = 92;
 $grade = '';
 
+// if else nested
 if ($score >= 80) {
     if ($attendance >= 90) {
         $grade = "Excellent";
@@ -32,8 +18,8 @@ if ($score >= 80) {
     }
 }
 
-// jawaban
-$grade = $score >=80 ? ...
-echo $grade; // Output: Excellent
-
+// ternary operator with if else nested
+$grade = ($score >= 80)
+    ? (($attendance >= 90) ? "Excellent" : "Good, but improve attendance")
+    : (($attendance >= 90) ? "Needs to improve score" : "Needs improvement in score and attendance");
 ?>
