@@ -9,7 +9,7 @@ foreach ($colors as $x) {
   echo "$x <br>";
 }
 
-for ($x = 0; $x <= count($colors); $x++) {
+for ($x = 0; $x < count($colors); $x++) {
   echo "The elemen is: $colors[$x] <br>";
 }
 ?>  
